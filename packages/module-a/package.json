@@ -1,0 +1,15 @@
+{
+  "name": "@istonikula/module-a",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:2.0.0": "rm -rf node_modules && rm -rf lib && yarn && yarn upgrade io-ts@2.0.0 && tsc",
+    "build:2.0.1": "rm -rf node_modules && rm -rf lib && yarn && yarn upgrade io-ts@2.0.1 && tsc"
+  },
+  "dependencies": {
+    "@istonikula/module-b": "file:./../module-b",
+    "io-ts": "2.0.1",
+    "typescript": "3.5.3"
+  },
+  "devDependencies": {}
+}
